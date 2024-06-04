@@ -107,7 +107,6 @@ def setup_cfg(args):
     cfg.freeze()
     return cfg
 
-
 def main(args):
     start_time = time.time()
     cfg = setup_cfg(args)
@@ -116,8 +115,8 @@ def main(args):
         set_random_seed_more(cfg.SEED)
     setup_logger(cfg.OUTPUT_DIR)
 
-    if torch.cuda.is_available() and cfg.USE_CUDA:
-        torch.backends.cudnn.benchmark = True
+#    if torch.cuda.is_available() and cfg.USE_CUDA:
+#        torch.backends.cudnn.benchmark = True
 
     print_args(args, cfg)
     print('Collecting env info ...')
@@ -148,8 +147,9 @@ def set_random_seed_more(seed):
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-
+    torch.cuda.manual_seed_all(seed)  # if you are using multi-GPU.
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

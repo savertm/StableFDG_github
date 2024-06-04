@@ -635,7 +635,7 @@ class TrainerX_fed(SimpleTrainer):
                     else:
                         loss_summary = self.forward_backward_fed(batch, batch_cb, local_model)
 
-                    print(loss_summary['loss'], idx, self.epoch)
+                    print(f"Local loss: {loss_summary['loss']:.4f} | Client idx: {idx} | Global round: {self.epoch}")
 
             local_weights.append(local_model.state_dict())
             local_losses.append(loss_summary['loss'])
