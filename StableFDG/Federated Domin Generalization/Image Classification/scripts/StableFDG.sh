@@ -36,7 +36,7 @@ fi
 
 
 GPU_number=0
-for SEED in $(seq 2025 2025)
+for SEED in $(seq 2024 2026)
 do
     for SETUP in $(seq 1 1)
     do
