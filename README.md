@@ -29,16 +29,16 @@ pip install -r requirements.txt
   * data_distribution : Data distribution setup (Single or Multi) 
   * exploration_level : Exploration level (alpha)
   * oversampling_size : Oversampling size
-* The core parts of our code are included in the following files:
-  *  '''Dassl.pytorch/dassl/engine/trainer.py'''
-  *  '''Dassl.pytorch/dassl/modeling/backbone/resnet.py'''
-  *  '''Dassl.pytorch/dassl/modeling/ops/oma.py'''
-  *  '''Dassl.pytorch/dassl/modeling/ops/style_insert.py'''
-  *  '''Dassl.pytorch/dassl/modeling/ops/cross_attn.py'''
+* The core parts of our code are contained in the following python files:
+  *  ```Dassl.pytorch/dassl/engine/trainer.py```
+  *  ```Dassl.pytorch/dassl/modeling/backbone/resnet.py```
+  *  ```Dassl.pytorch/dassl/modeling/ops/oma.py```
+  *  ```Dassl.pytorch/dassl/modeling/ops/style_insert.py```
+  *  ```Dassl.pytorch/dassl/modeling/ops/cross_attn.py```
 
 ### How to Run
 
-* ```cd``` to ```scripts/```
+* ```cd``` to ```StableFDG/Federated Domain Generalization/Image Classification/scripts```
 
 ```bash
 
@@ -49,4 +49,4 @@ pip install -r requirements.txt
 
 ## Acknowledgement
 
-Our code is built upon the implementations at 1) [https://github.com/AshwinRJ/Federated-Learning-PyTorch/blob/master/README.md](https://github.com/KaiyangZhou/mixstyle-release/tree/master/imcls) , 2) https://github.com/leaderj1001/Attention-Augmented-Conv2d.
+Our code is built upon the implementations at 1) https://github.com/KaiyangZhou/mixstyle-release, 2) [https://github.com/AshwinRJ/Federated-Learning-PyTorch/blob/master/README.md](https://github.com/KaiyangZhou/mixstyle-release/tree/master/imcls) , 3) https://github.com/leaderj1001/Attention-Augmented-Conv2d.
