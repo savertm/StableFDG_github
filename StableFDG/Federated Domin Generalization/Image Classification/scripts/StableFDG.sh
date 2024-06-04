@@ -35,7 +35,7 @@ elif [ ${DATASET} == digits_dg ]; then
 fi
 
 
-GPU_number=5
+GPU_number=0
 for SEED in $(seq 2025 2025)
 do
     for SETUP in $(seq 1 1)
@@ -71,7 +71,7 @@ do
         --target-domains ${T} \
         --dataset-config-file ${DASSL}/configs/datasets/dg/${DATASET}.yaml \
         --config-file configs/trainers/StableFDG/${DATASET}_${MIX}.yaml \
-        --output-dir FedDG/${DATASET}/${TRAINER}/${NET}_StableFDG2_benchmarkfalse/${MIX}/${T}/seed${SEED} \
+        --output-dir FedDG/${DATASET}/${TRAINER}/${NET}_StableFDG/${MIX}/${T}/seed${SEED} \
         --data_distribution Single \
         --exploration_level 3.0 \
         --oversampling_size 32 \
