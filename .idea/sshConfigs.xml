@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="comstogpu7.kaist.ac.kr" id="8ef68811-e33e-4126-92e2-93295c9e4e5f" port="22" nameFormat="DESCRIPTIVE" username="savertm" />
+    </configs>
+  </component>
+</project>
