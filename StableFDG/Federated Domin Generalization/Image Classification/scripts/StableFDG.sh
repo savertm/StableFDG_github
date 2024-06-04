@@ -35,8 +35,8 @@ elif [ ${DATASET} == digits_dg ]; then
 fi
 
 
-GPU_number=3
-for SEED in $(seq 2022 2022)
+GPU_number=4
+for SEED in $(seq 2021 2021)
 do
     for SETUP in $(seq 1 1)
     do
