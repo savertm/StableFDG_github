@@ -6,7 +6,7 @@ DATA=/drive1/data
 DASSL=/home/savertm/Project/FedDG/Dassl.pytorch
 
 ################### leave one domain out setting
-DATASET=digits_dg # office_home_dg, pacs, vlcs, digits_dg
+DATASET=pacs # office_home_dg, pacs, vlcs, digits_dg
 TRAINER=Vanilla2
 
 NET=resnet18_OMA_ms_l123 # resnet50_OMA_ms_l123
@@ -36,7 +36,7 @@ fi
 
 
 GPU_number=3
-for SEED in $(seq 2 2)
+for SEED in $(seq 2022 2022)
 do
     for SETUP in $(seq 1 1)
     do
